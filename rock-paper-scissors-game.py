@@ -1,7 +1,5 @@
-
 from tkinter import *
 import random
-
 
 root = Tk()
 root.geometry('400x400')
@@ -9,17 +7,11 @@ root.resizable(0,0)
 root.title('DataFlair-Rock,Paper,Scissors')
 root.config(bg ='seashell3')
 
-
-
 Label(root, text = 'Rock, Paper ,Scissors' , font='arial 20 bold', bg = 'seashell2').pack()
-
-
 
 user_take = StringVar()
 Label(root, text = 'choose any one: rock, paper ,scissors' , font='arial 15 bold', bg = 'seashell2').place(x = 20,y=70)
 Entry(root, font = 'arial 15', textvariable = user_take , bg = 'antiquewhite2').place(x=90 , y = 130)
-
-
 
 
 comp_pick = random.randint(1,3)
@@ -30,9 +22,6 @@ elif comp_pick ==2:
 else:
     comp_pick = 'scissors'
     
-
-
-
 
 Result = StringVar()
 
@@ -57,7 +46,6 @@ def play():
     
         
     
-
 def Reset():
     Result.set("") 
     user_take.set("")
